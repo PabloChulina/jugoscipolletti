@@ -89,21 +89,6 @@
         </p>
       </div>
 
-      <div class="concept-layout">
-        <article class="concept-panel">
-          <h3>Naturaleza</h3>
-          <p>La manzana es el origen de todo: fruta, tierra, trabajo y una forma simple de volver a elegir lo que hace bien.</p>
-        </article>
-        <article class="concept-panel concept-panel-dark">
-          <h3>Identidad</h3>
-          <p>La marca está ligada al Alto Valle de Río Negro y Neuquén, una región manzanera con historia, reconocimiento y futuro.</p>
-        </article>
-        <article class="concept-panel">
-          <h3>Memoria afectiva</h3>
-          <p>Volver a Cipolletti también es volver a las meriendas, a los encuentros y a las alegrías compartidas.</p>
-        </article>
-      </div>
-
       <div class="values-grid">
         <article class="value-card">
           <div class="value-image value-image-naturaleza"></div>
@@ -169,7 +154,7 @@
             <span>Producto en desarrollo</span>
           </div>
           <div class="product-content">
-            <h3>Manzanas disecadas</h3>
+            <h3>Manzanas deshidratadas</h3>
             <p>Fruta del Valle en un formato práctico, pensado para acompañar hábitos más conscientes.</p>
           </div>
         </article>
@@ -213,8 +198,8 @@
             <span>Derivados</span>
           </div>
           <div class="product-content">
-            <h3>Vinagre</h3>
-            <p>Vinagre de sidra como parte de una familia de derivados que aprovecha el valor natural de la manzana.</p>
+            <h3>Vinagre de cidra</h3>
+            <p>Vinagre de cidra como parte de una familia de derivados que aprovecha el valor natural de la manzana.</p>
           </div>
         </article>
 
@@ -274,28 +259,60 @@
           </ul>
         </div>
 
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contact-form">
           <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+          <input type="text" id="name" name="nombre" placeholder="Tu nombre" required>
 
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="tu@email.com" required>
 
           <label for="message">Mensaje</label>
-          <textarea id="message" name="message" rows="5" placeholder="Contanos tu consulta" required></textarea>
+          <textarea id="message" name="mensaje" rows="5" placeholder="Contanos tu consulta" required></textarea>
+
+          <input type="hidden" id="emailjs-name" name="name">
+          <input type="hidden" id="emailjs-user-name" name="user_name">
+          <input type="hidden" id="emailjs-user-email" name="user_email">
+          <input type="hidden" id="emailjs-message" name="message">
+          <input type="hidden" name="title" value="Nuevo mensaje desde la web Cipolletti">
+          <input type="hidden" id="emailjs-time" name="tiempo">
 
           <button class="button button-primary" type="submit">Enviar consulta</button>
-          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Cipolletti. Marca, identidad y propuesta comercial.</p>
-    <a href="#inicio">Volver arriba</a>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2>Cipolletti</h2>
+        <p>Marca, identidad y propuesta comercial vinculada a productos regionales, naturales y de calidad.</p>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contacto</h3>
+        <ul>
+          <li>
+            <strong>Contacto:</strong>
+            <a href="mailto:jugoscipolletti@gmail.com">jugoscipolletti@gmail.com</a>
+          </li>
+          <li>
+            <strong>Instagram:</strong>
+            <a href="https://www.instagram.com/jugoscipolletti" target="_blank" rel="noopener noreferrer">@jugoscipolletti</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Cipolletti. Todos los derechos reservados.</p>
+      <p>La informaci&oacute;n enviada mediante el formulario ser&aacute; utilizada &uacute;nicamente para responder consultas comerciales.</p>
+      <a href="#inicio">Volver arriba</a>
+    </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
