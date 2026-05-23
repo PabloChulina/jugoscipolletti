@@ -2,9 +2,9 @@ const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector("[data-nav-links]");
 const contactForm = document.querySelector("#contact-form");
 const formStatus = document.querySelector("#form-status");
-const emailServiceId = "service_g7ujvye";
-const emailTemplateId = "template_t476rfj";
-const emailPublicKey = "QmqungAYuiHziLYfH";
+  const emailServiceId = "service_g7ujvye";
+  const emailTemplateId = "template_t476rfj";
+  const emailPublicKey = "QmqungAYuiHziLYfH";
 
 if (menuToggle && navLinks) {
   menuToggle.addEventListener("click", () => {
