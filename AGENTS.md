@@ -2,62 +2,106 @@
 
 ## Estado actual del proyecto
 
-El proyecto ya tiene una primera versión creada con estos archivos:
+El proyecto ya tiene una versión creada, funcionando y publicada en producción en:
+
+https://jugoscipolletti.com.ar/
+
+Los archivos principales del proyecto son:
 
 - index.html: estructura principal de la web.
 - styles.css: estilos visuales, diseño responsive, colores, tarjetas, secciones y navegación.
-- script.js: interacción del menú responsive y comportamiento visual del formulario de contacto.
+- script.js: interacción del menú responsive y comportamiento del formulario de contacto.
 
 No rehacer el proyecto desde cero salvo que se pida expresamente.
 
-Trabajar sobre la estructura existente, mejorando el contenido, la accesibilidad, el diseño responsive y la prolijidad del código.
+Trabajar siempre sobre la estructura existente, aplicando cambios concretos, mínimos y prolijos.
+
+Antes de modificar archivos importantes, revisar el estado actual del proyecto y entender cómo está construida la web.
 
 ## Objetivo del proyecto
 
-Crear y mejorar una página web institucional para la marca Cipolletti.
+Crear, mantener y mejorar una página web institucional para la marca Cipolletti.
 
 Cipolletti no debe presentarse como una tienda con stock propio ni como un catálogo cerrado de productos.
 
-La web debe presentar a Cipolletti como una marca/concepto comercial, con identidad, valores, propuesta de trabajo, posibles líneas futuras y canales de contacto.
+La web debe presentar a Cipolletti como una marca/concepto comercial, con identidad, historia, valores, propuesta de trabajo, posibles líneas de productos, modalidad comercial y canales de contacto.
+
+La web debe transmitir una imagen clara, seria, moderna, cercana y comercial.
 
 ## Secciones actuales de la web
 
-La web debe conservar y mejorar estas secciones:
+La web debe conservar estas secciones principales:
 
 - Inicio
 - Quiénes somos
-- Concepto de marca
-- Valores
+- Misión y valores
 - Qué ofrecemos
-- Productos y líneas
-- Modalidad de trabajo
+- Línea de Productos
+- Modalidad
 - Contacto
+
+La navegación principal actual ya está definida. No modificarla salvo que el usuario lo pida expresamente.
 
 Si se agregan secciones nuevas, deben tener sentido comercial y no sobrecargar la página.
 
 ## Reglas sobre el contenido
 
-Mantener un tono claro, profesional, moderno y comercial.
+Mantener un tono claro, profesional, moderno, comercial y humano.
 
 Evitar frases genéricas, vacías o demasiado repetidas.
 
 No afirmar que Cipolletti vende productos propios con stock disponible.
 
-Cuando se mencionen productos, tratarlos como líneas posibles, categorías editables o propuestas futuras.
+Cuando se mencionen productos, tratarlos como líneas, categorías, propuestas comerciales, productos en desarrollo o posibilidades futuras vinculadas a la identidad de la marca.
 
-Los textos deben sonar humanos, confiables y serios.
+No presentar la web como un ecommerce.
 
-## Reglas sobre el diseño
+No agregar información comercial no confirmada por el usuario.
+
+No agregar teléfonos ni WhatsApp salvo que el usuario lo pida expresamente.
+
+Los datos reales de contacto son:
+
+- Email: jugoscipolletti@gmail.com
+- Instagram: @jugoscipolletti
+
+No usar datos ficticios de contacto.
+
+## Reglas sobre formulario y EmailJS
+
+El formulario de contacto ya fue integrado con EmailJS y funciona correctamente.
+
+No reemplazar EmailJS por otra solución salvo que el usuario lo pida expresamente.
+
+No eliminar ni romper la integración existente del formulario.
+
+No modificar credenciales, claves públicas, service ID, template ID ni configuración de EmailJS salvo que el usuario lo solicite.
+
+No decir que el formulario es solo visual o simulado, porque actualmente ya envía consultas reales por EmailJS.
+
+Si se modifica script.js, verificar que:
+
+- el menú responsive siga funcionando;
+- el formulario siga enviando correctamente;
+- se mantengan los mensajes visuales de éxito o error;
+- no haya errores de consola;
+- no falle si algún elemento no existe en el HTML.
+
+## Reglas sobre diseño
 
 Mantener una estética limpia, moderna y elegante.
 
 Respetar la paleta actual salvo que se solicite cambiarla.
 
-La web debe verse bien en computadora, tablet y celular.
+La web debe verse correctamente en computadora, tablet y celular.
 
 No agregar efectos innecesarios ni sobrecargar la página.
 
 Priorizar buena legibilidad, espaciado correcto, botones claros y navegación simple.
+
+No modificar imágenes, colores, tipografías, tamaños, estructura visual ni estilos generales salvo que el pedido lo indique expresamente.
+
+Si el pedido es únicamente de textos, no tocar estilos ni JavaScript salvo que sea estrictamente necesario.
 
 ## Reglas sobre los archivos
 
@@ -73,23 +117,13 @@ No crear archivos nuevos innecesarios.
 
 No borrar contenido existente sin explicar antes el motivo.
 
-## Reglas sobre JavaScript
-
-El archivo script.js actualmente maneja:
-
-- apertura y cierre del menú responsive;
-- cierre del menú al tocar un enlace;
-- mensaje visual al enviar el formulario.
-
-Mantener esas funciones.
-
-Si se modifica JavaScript, verificar que no falle si algún elemento no existe en el HTML.
-
-El formulario actual no envía datos reales. Solo muestra un mensaje visual. No decir que el formulario funciona con email, WhatsApp o backend hasta que se conecte realmente.
+Si el pedido es solo de textos, modificar principalmente index.html y evitar tocar styles.css o script.js.
 
 ## Reglas de trabajo para Codex
 
 Antes de modificar, explicar brevemente qué cambios se van a hacer.
+
+No rehacer componentes completos si solo se pidieron cambios de texto.
 
 Aplicar cambios concretos y prolijos.
 
@@ -97,17 +131,36 @@ Después de modificar, revisar:
 
 - enlaces internos;
 - nombres de secciones;
+- navegación principal;
 - responsive;
 - accesibilidad básica;
 - errores de consola;
-- coherencia entre HTML, CSS y JavaScript.
+- coherencia entre HTML, CSS y JavaScript;
+- que no queden textos viejos duplicados;
+- que los datos de contacto sean correctos;
+- que el formulario con EmailJS siga funcionando;
+- que la web siga funcionando en escritorio y celular.
+
+## Reglas especiales por estar publicada
+
+La web ya está publicada, por lo tanto:
+
+- Evitar cambios grandes innecesarios.
+- No romper rutas, enlaces internos ni nombres de secciones.
+- No eliminar contenido sin necesidad.
+- No modificar archivos que no estén relacionados con el pedido.
+- Probar localmente antes de subir cambios.
+- Si el cambio puede afectar producción, avisar antes de aplicarlo.
 
 ## Puntos a tener presentes
 
-Estos puntos no deben aplicarse automáticamente. Solo deben revisarse o modificarse cuando el usuario lo pida expresamente.
+Estos puntos no deben aplicarse automáticamente. Solo deben revisarse o modificarse cuando el usuario lo pida expresamente:
 
-- Verificar que la navegación coincida con las secciones reales.
-- Evaluar si conviene cambiar “Productos” por “Productos y líneas”, “Líneas” o “Propuesta”.
-- Evaluar si conviene incluir “Qué ofrecemos” y “Modalidad” en el menú principal.
-- Mantener marcados como editables los datos ficticios de contacto hasta contar con datos reales.
-- Mantener marcadas como editables las imágenes o tarjetas visuales de ejemplo hasta contar con recursos definitivos.
+- Cambios de textos enviados por el cliente.
+- Modificación de imágenes.
+- Cambios de fondo por sección.
+- Nuevas categorías de productos.
+- Contador de visitantes.
+- Cambios en navegación principal.
+- Cambios estéticos generales.
+- Cambios en EmailJS o en el formulario.
